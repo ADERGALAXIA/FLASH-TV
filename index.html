@@ -1,125 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta charset="utf-8">
-   <meta name="description" content="Affordable and professional web design">
-  	<meta name="author" content="ADERGALAXIA">
-    <title>FLASH TV |Bienvenidos</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>SERIE HUNGRY HEART
+    </title>
+    <!-- Responsive viewport -->
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+    <style type="text/css">
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      text-transform:capitalize;
+    }
+    body{
+      background:#000;
+    }
+    .heading{
+      color:#444;
+      font-size:20px;
+      text-align:center;
+    }
+    .container{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:5px;
+      align-items:flex-start;
+      padding:1px;
+      position: fixed;
+    }
+    .container .main-video{
+      background:#151515;
+      border-radius:10px;
+      padding:1px;
+      height: 30%;
+    }
+    .container .main-video video{
+      width:100%;
+      border-radius:5px;
+    }
+    .container .main-video .title{
+      color:#fff;
+      font-size:23px;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    .container .video-list{
+      background:#151515;
+      border-radius:5px;
+      height:58%;
+      overflow-y:scroll;
+      padding-bottom: 20px;
+    }
+    .container .video-list::-webkit-scrollbar{
+      width:7px;
+    }
+    .container .video-list::-webkit-scrollbar-track{
+      background:#ccc;
+      border-radius:50px;
+    }
+    .container .video-list::-webkit-scrollbar-thumb{
+      background:#666;
+      border-radius:50px;
+    }
+    .container .video-list .vid video{
+      width:90px;
+      border-radius:5px;
+    }
+    .container .video-list .vid{
+      background:#f7f7f7;
+      display:flex;
+      align-items:center;
+      gap:15px;
+      border-radius:5px;
+      margin:10px;
+      padding:10px;
+      border:1px solid rgba(0,0,0,.1);
+      cursor:pointer;
+    }
+    .container .video-list .vid:hover{
+      background:#eee;
+    }
+    .container .video-list .vid.active{
+      background:#2980b9;
+    }
+    .container .video-list .vid.active .title{
+      color:#fff;
+    }
+    .container .video-list .vid .title{
+      color:#333;
+      font-size:17px;
+    }
+    @media (max-width: 991px){
+      .container{
+        grid-template-columns:1.5fr 1fr;
+        padding:10px;
+      }
+    }
+    @media (max-width: 768px){
+      .container{
+        grid-template-columns:1fr;
+      }
+    }
+    </style>
   </head>
   <body>
-   <div class="container">
-    <img class="logo" src="https://i.ibb.co/F4XB6pS/20201128-172538.png">
-    <div class="carrousel1">
-     <a href="index.html"><b>TV GRATIS</b></a>
-     <a href="about.html"><b>PELÍCULAS</b></a>
-     <a href="services.html"><b>SERIES</b></a>
-     <a href="services.html"><b>LISTAS M3U</b></a>
-    </div>
-   </div>
-   <div class="canales">
-    <img class="ecuador1" src="https://i.ibb.co/0jycTGh/LETRA-ECU.png" alt="">
-    <div class="container2">
-     <div class="carrousel">
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/tJJB0KW/Photo-1608013984638.png" alt="tc">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/yd4q2qX/Photo-1607055157529.png" alt="ecuavisa">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/zh7XrhD/Photo-1608014278016.png" alt="rts">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/fD9tn49/Photo-1608014809813.png" alt="canal uno">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/xHdKLtC/Photo-1608015147504.png" alt="oromartv">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/gPTJQBT/Photo-1608015315107.png" alt="teleamazonas">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/ZxghQLc/Photo-1608015827056.png" alt="majestad">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/ZJ3cK1T/Photo-1608016295330.png" alt="nueva tv">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/gJnwtMh/Photo-1608016513540.png" alt="canela tv">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/wS0z9cy/Photo-1608016760386.png" alt="austral tv">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/t3RJbpV/Photo-1608017101953.png" alt="rtu">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/VVcCbrz/Photo-1608361190822.png" alt="tv manabita">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/7bp967x/Photo-1608361590194.png" alt="ucgs tv">
-      </a>
-      <a href="#" class="item">
-       <img class="ecuador" src="https://i.ibb.co/WVY7jsd/Photo-1608362277871.png" alt="latacunga tv">
-      </a>
-     </div>
-    </div>
-   </div>
-   <div class="canales">
-    <img class="ecuador1" src="https://i.ibb.co/0jycTGh/LETRA-ECU.png" alt="">
-    <div class="container2">
-       <div class="carrousel">
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/tJJB0KW/Photo-1608013984638.png" alt="tc">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/yd4q2qX/Photo-1607055157529.png" alt="ecuavisa">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/zh7XrhD/Photo-1608014278016.png" alt="rts">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/fD9tn49/Photo-1608014809813.png" alt="canal uno">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/xHdKLtC/Photo-1608015147504.png" alt="oromartv">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/gPTJQBT/Photo-1608015315107.png" alt="teleamazonas">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/ZxghQLc/Photo-1608015827056.png" alt="majestad">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/ZJ3cK1T/Photo-1608016295330.png" alt="nueva tv">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/gJnwtMh/Photo-1608016513540.png" alt="canela tv">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/wS0z9cy/Photo-1608016760386.png" alt="austral tv">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/t3RJbpV/Photo-1608017101953.png" alt="rtu">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/VVcCbrz/Photo-1608361190822.png" alt="tv manabita">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/7bp967x/Photo-1608361590194.png" alt="ucgs tv">
-        </a>
-        <a href="#" class="item">
-         <img class="ecuador" src="https://i.ibb.co/WVY7jsd/Photo-1608362277871.png" alt="latacunga tv">
-        </a>
-       </div>
+    <div class="container">
+      <div class="main-video">
+        <div class="video">
+          <video class="js-player" poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg" controls muted autoplay>
+            <source src="http://playentertainmentpro.ddns.net:80/raulctv1/raulctv2021/18942.m3u8" allow="autoplay" type="application/x-mpegURL">
+          </video>
+          <!--<video src="http://playentertainmentpro.ddns.net:80/raulctv1/raulctv2021/18942.m3u8" poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg" controls muted autoplay></video>-->
+          <h3 class="title">Capitulo 1x1</h3>
+        </div>
       </div>
-    <footer>
-      <p>by ADERGALAXIA, Copyright &copy; 2020</p>
-    </footer>
+      <div class="video-list">
+        <div class="vid active">
+          <video src="http://playentertainmentpro.ddns.net:80/raulctv1/raulctv2021/18942.m3u8" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x1</h3>
+        </div>
+        <div class="vid">
+          <video src="https://estrellatv-plex.amagi.tv/playlistR1080p.m3u8" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x2</h3>
+        </div>
+        <div class="vid">
+          <video src="" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x3</h3>
+        </div>
+        <div class="vid">
+          <video src="" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x4</h3>
+        </div>
+        <div class="vid">
+          <video src="" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h4 class="title">Capitulo 1x5</h4>
+        </div>
+        <div class="vid">
+          <video src="" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x6</h3>
+        </div>
+        <div class="vid">
+          <video src="" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x7</h3>
+        </div>
+        <div class="vid">
+          <video src="" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x8</h3>
+        </div>
+        <div class="vid">
+          <video src="" muted poster="https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg">
+          </video>
+          <h3 class="title">Capitulo 1x9</h3>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+    let listVideo = document.querySelectorAll('.video-list .vid');
+    let mainVideo = document.querySelector('.main-video video');
+    let title = document.querySelector('.main-video .title');
+    listVideo.forEach(video =>{
+      video.onclick = () =>{
+        listVideo.forEach(vid => vid
+        .classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')){
+          let src = video.children[0].getAttribute('src');
+          mainVideo.src = src;
+          let text = video.children[1].innerHTML;
+          title.innerHTML = text;
+        };
+      };
+    });
+    </script>
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js">
+    </script>
+    <script>//<![CDATA[
+      const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+      //]]>
+    </script>
   </body>
 </html>
